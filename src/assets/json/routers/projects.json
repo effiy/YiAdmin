@@ -1,0 +1,58 @@
+{
+  "path": "/projects",
+  "name": "projects",
+  "redirect": "/projects/list",
+  "meta": {
+    "icon": "Lock",
+    "title": "项目管理",
+    "isLink": "",
+    "isHide": false,
+    "isFull": false,
+    "isAffix": false,
+    "isKeepAlive": true
+  },
+  "children": [
+    {
+      "path": "/projects/list",
+      "name": "projectsListMenu",
+      "component": "/projects/list/index",
+      "meta": {
+        "icon": "Menu",
+        "title": "项目列表",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/system/userManage/detail",
+      "name": "systemUserDetailMenu",
+      "component": "/system/userManage/detail/index",
+      "meta": {
+        "icon": "Menu",
+        "title": "人员详情",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/tasks/detail",
+      "name": "tasksDetailMenu",
+      "component": "/tasks/detail/index",
+      "meta": {
+        "icon": "Menu",
+        "title": "任务详情",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "list": [
+      {
+        "id": "105063854766495127",
+        "username": "钱强",
+        "gender": 1,
+        "user": {
+          "detail": {
+            "age": 20
+          }
+        },
+        "idCard": "105063854766495127",
+        "email": "e.qbjith@ohxhm.md",
+        "address": "广西壮族自治区 百色市",
+        "createTime": "1994-10-03 14:20:32",
+        "status": 1,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRqMK.jpg"
+      },
+      {
+        "id": "186859640839364881",
+        "username": "邱丽",
+        "gender": 1,
+        "user": {
+          "detail": {
+            "age": 24
+          }
+        },
+        "idCard": "186859640839364881",
+        "email": "o.aigvfjgte@wbhyqlm.sm",
+        "address": "江西省 九江市",
+        "createTime": "1997-05-31 03:00:22",
+        "status": 0,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRqMK.jpg"
+      },
+      {
+        "id": "317705353998812552",
+        "username": "于丽",
+        "gender": 2,
+        "user": {
+          "detail": {
+            "age": 11
+          }
+        },
+        "idCard": "317705353998812552",
+        "email": "p.rjdhehjjg@xrbif.do",
+        "address": "四川省 甘孜藏族自治州",
+        "createTime": "1970-05-17 21:11:48",
+        "status": 0,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRqMK.jpg"
+      },
+      {
+        "id": "086608773875250058",
+        "username": "罗秀英",
+        "gender": 1,
+        "user": {
+          "detail": {
+            "age": 25
+          }
+        },
+        "idCard": "086608773875250058",
+        "email": "e.orlna@ichhts.info",
+        "address": "福建省 莆田市",
+        "createTime": "2018-04-08 20:30:36",
+        "status": 0,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRBHS.jpg"
+      },
+      {
+        "id": "923827032632561544",
+        "username": "李桂英",
+        "gender": 1,
+        "user": {
+          "detail": {
+            "age": 28
+          }
+        },
+        "idCard": "923827032632561544",
+        "email": "h.yskkabsd@sokuww.gr",
+        "address": "甘肃省 天水市",
+        "createTime": "2002-02-15 14:02:33",
+        "status": 1,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRqMK.jpg"
+      },
+      {
+        "id": "226866424446675375",
+        "username": "梁勇",
+        "gender": 1,
+        "user": {
+          "detail": {
+            "age": 24
+          }
+        },
+        "idCard": "226866424446675375",
+        "email": "l.thpkq@mde.hk",
+        "address": "云南省 德宏傣族景颇族自治州",
+        "createTime": "2004-03-13 07:20:28",
+        "status": 1,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRqMK.jpg"
+      },
+      {
+        "id": "386385743624106303",
+        "username": "丁艳",
+        "gender": 2,
+        "user": {
+          "detail": {
+            "age": 25
+          }
+        },
+        "idCard": "386385743624106303",
+        "email": "o.revi@ggmlupq.uk",
+        "address": "河北省 邯郸市",
+        "createTime": "1999-03-07 01:51:32",
+        "status": 1,
+        "avatar": "https://i.imgtg.com/2023/01/16/QR57a.jpg"
+      },
+      {
+        "id": "743967337676168693",
+        "username": "冯艳",
+        "gender": 2,
+        "user": {
+          "detail": {
+            "age": 17
+          }
+        },
+        "idCard": "743967337676168693",
+        "email": "n.xmrncsotp@ujf.ph",
+        "address": "河北省 邯郸市",
+        "createTime": "1979-05-31 06:41:29",
+        "status": 1,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRa0s.jpg"
+      },
+      {
+        "id": "063428211946549782",
+        "username": "龚杰",
+        "gender": 1,
+        "user": {
+          "detail": {
+            "age": 28
+          }
+        },
+        "idCard": "063428211946549782",
+        "email": "x.hcppdbmx@xgrhpdi.int",
+        "address": "吉林省 吉林市",
+        "createTime": "1985-05-19 16:17:32",
+        "status": 1,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRBHS.jpg"
+      },
+      {
+        "id": "664575461552865797",
+        "username": "金丽",
+        "gender": 2,
+        "user": {
+          "detail": {
+            "age": 13
+          }
+        },
+        "idCard": "664575461552865797",
+        "email": "o.jkmhtd@dwkptq.asia",
+        "address": "新疆维吾尔自治区 克孜勒苏柯尔克孜自治州",
+        "createTime": "1974-07-13 08:26:05",
+        "status": 0,
+        "avatar": "https://i.imgtg.com/2023/01/16/QR57a.jpg"
+      }
+    ],
+    "pageNum": 1,
+    "pageSize": 10,
+    "total": 2000
+  }
+}

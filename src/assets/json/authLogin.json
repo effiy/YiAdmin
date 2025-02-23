@@ -1,0 +1,9 @@
+{
+  "status": 200,
+  "msg": "success",
+  "data": {
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0MDI4NTgxMX0.sAxAYXQ9OSs-yN8iuuTjvoQW5J3q9w-aouGUxJWlcxc",
+    "token_type": "bearer"
+  },
+  "pagination": null
+}

@@ -1,0 +1,63 @@
+.art-banner {
+  position: relative;
+  z-index: 999;
+  background-image: url("@/assets/images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  transition: 0.55s ease-in-out;
+}
+.art-banner .art-banner-overlay {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 60px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(15%, rgb(45 45 58 / 90%)),
+    color-stop(50%, rgb(45 45 58 / 70%)),
+    to(rgb(43 43 53 / 70%))
+  );
+  background-image: linear-gradient(90deg, rgb(45 45 58 / 90%) 15%, rgb(45 45 58 / 70%) 50%, rgb(43 43 53 / 70%) 100%);
+}
+.art-banner .art-banner-overlay.art-side-overlay {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(15%, rgb(45 45 58 / 90%)),
+    color-stop(50%, rgb(45 45 58 / 70%)),
+    to(rgb(43 43 53 / 0%))
+  );
+  background-image: linear-gradient(90deg, rgb(45 45 58 / 90%) 15%, rgb(45 45 58 / 70%) 50%, rgb(43 43 53 / 0%) 100%);
+}
+.art-banner .art-banner-overlay .art-banner-title {
+  align-self: center;
+  width: 100%;
+  -ms-flex-item-align: center;
+}
+.art-banner .art-banner-overlay .art-banner-title h1 {
+  color: #fafafc;
+}
+.art-banner .art-banner-overlay .art-banner-photo {
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  height: 100%;
+}
+.art-banner .art-banner-overlay .art-banner-title .art-buttons-frame {
+  padding: 20px 0;
+}
+
+/* ----- typing code ----- */
+.art-code {
+  color: #fafafc;
+}
+.art-code i {
+  font-style: normal;
+  color: #ffc107;
+}

@@ -1,0 +1,144 @@
+{
+  "path": "/system",
+  "name": "system",
+  "redirect": "/system/accountManage",
+  "meta": {
+    "icon": "Tools",
+    "title": "系统管理",
+    "isLink": "",
+    "isHide": false,
+    "isFull": false,
+    "isAffix": false,
+    "isKeepAlive": true
+  },
+  "children": [
+    {
+      "path": "/system/userManage",
+      "name": "userManage",
+      "component": "/system/userManage/index",
+      "meta": {
+        "icon": "Menu",
+        "title": "用户管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/system/accountManage",
+      "name": "accountManage",
+      "component": "/system/accountManage/index",
+      "meta": {
+        "icon": "Menu",
+        "title": "账号管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/system/roleManage",
+      "name": "roleManage",
+      "component": "/system/roleManage/index",
+      "meta": {
+        "icon": "Menu",
+        "title": "角色管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/auth",
+      "name": "auth",
+      "redirect": "/auth/menu",
+      "meta": {
+        "icon": "Lock",
+        "title": "权限管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/auth/menu",
+          "name": "authMenu",
+          "component": "/auth/menu/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "菜单权限",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/auth/button",
+          "name": "authButton",
+          "component": "/auth/button/index",
+          "meta": {
+            "icon": "Menu",
+            "title": "按钮权限",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/system/dictManage",
+      "name": "dictManage",
+      "component": "/system/dictManage/index",
+      "meta": {
+        "icon": "Menu",
+        "title": "字典管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/system/timingTask",
+      "name": "timingTask",
+      "component": "/system/timingTask/index",
+      "meta": {
+        "icon": "Menu",
+        "title": "定时任务",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/system/systemLog",
+      "name": "systemLog",
+      "component": "/system/systemLog/index",
+      "meta": {
+        "icon": "Menu",
+        "title": "系统日志",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    }
+  ]
+}

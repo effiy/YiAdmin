@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "vue.volar",
+    "hollowtree.vue-snippets",
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "streetsidesoftware.code-spell-checker",
+    "syler.less-indented",
+    "equinusocio.vsc-material-theme",
+    "eamodio.gitlens"
+  ]
+}

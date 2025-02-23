@@ -1,0 +1,171 @@
+{
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "list": [
+      {
+        "id": "372772720334512420",
+        "username": "方磊",
+        "gender": 1,
+        "user": {
+          "detail": {
+            "age": 26
+          }
+        },
+        "idCard": "372772720334512420",
+        "email": "b.kjudg@wlwbmbxib.bt",
+        "address": "陕西省 铜川市",
+        "createTime": "2003-07-16 18:52:17",
+        "status": 0,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRBHS.jpg"
+      },
+      {
+        "id": "148477780744442363",
+        "username": "陆静",
+        "gender": 1,
+        "user": {
+          "detail": {
+            "age": 27
+          }
+        },
+        "idCard": "148477780744442363",
+        "email": "o.bhuvhfurjv@kyfsd.gf",
+        "address": "河北省 邯郸市",
+        "createTime": "2024-04-25 21:14:32",
+        "status": 1,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRqMK.jpg"
+      },
+      {
+        "id": "058611751555074373",
+        "username": "乔霞",
+        "gender": 2,
+        "user": {
+          "detail": {
+            "age": 27
+          }
+        },
+        "idCard": "058611751555074373",
+        "email": "m.khesh@euscf.mc",
+        "address": "澳门特别行政区 澳门半岛",
+        "createTime": "2014-03-12 01:40:31",
+        "status": 0,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRBHS.jpg"
+      },
+      {
+        "id": "641490218483940034",
+        "username": "傅静",
+        "gender": 1,
+        "user": {
+          "detail": {
+            "age": 22
+          }
+        },
+        "idCard": "641490218483940034",
+        "email": "d.frqqwdbsmj@ikdgsfrz.pe",
+        "address": "广西壮族自治区 来宾市",
+        "createTime": "1992-04-19 12:41:15",
+        "status": 0,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRBHS.jpg"
+      },
+      {
+        "id": "172807557147238829",
+        "username": "万强",
+        "gender": 1,
+        "user": {
+          "detail": {
+            "age": 21
+          }
+        },
+        "idCard": "172807557147238829",
+        "email": "j.vauojhycli@ptiid.gl",
+        "address": "台湾 桃园县",
+        "createTime": "2011-08-03 08:35:01",
+        "status": 1,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRBHS.jpg"
+      },
+      {
+        "id": "514655839033416317",
+        "username": "徐刚",
+        "gender": 1,
+        "user": {
+          "detail": {
+            "age": 25
+          }
+        },
+        "idCard": "514655839033416317",
+        "email": "b.xeplhrwo@eeq.org.cn",
+        "address": "西藏自治区 林芝地区",
+        "createTime": "1996-06-20 21:25:46",
+        "status": 0,
+        "avatar": "https://i.imgtg.com/2023/01/16/QR57a.jpg"
+      },
+      {
+        "id": "466511761745130756",
+        "username": "高杰",
+        "gender": 2,
+        "user": {
+          "detail": {
+            "age": 18
+          }
+        },
+        "idCard": "466511761745130756",
+        "email": "s.hjgarq@kbonzee.name",
+        "address": "黑龙江省 鹤岗市",
+        "createTime": "1981-11-02 22:55:18",
+        "status": 0,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRqMK.jpg"
+      },
+      {
+        "id": "392634375595541934",
+        "username": "萧娜",
+        "gender": 1,
+        "user": {
+          "detail": {
+            "age": 19
+          }
+        },
+        "idCard": "392634375595541934",
+        "email": "q.fngcij@pyotmvtxy.es",
+        "address": "贵州省 铜仁市",
+        "createTime": "1985-05-05 02:08:47",
+        "status": 1,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRqMK.jpg"
+      },
+      {
+        "id": "738019761415313495",
+        "username": "金敏",
+        "gender": 2,
+        "user": {
+          "detail": {
+            "age": 21
+          }
+        },
+        "idCard": "738019761415313495",
+        "email": "u.foiowvhn@mudmtejw.iq",
+        "address": "海外 海外",
+        "createTime": "2010-06-19 22:06:23",
+        "status": 0,
+        "avatar": "https://i.imgtg.com/2023/01/16/QRBHS.jpg"
+      },
+      {
+        "id": "192384726083027271",
+        "username": "戴静",
+        "gender": 1,
+        "user": {
+          "detail": {
+            "age": 12
+          }
+        },
+        "idCard": "192384726083027271",
+        "email": "k.fukpxg@zgymmldr.sg",
+        "address": "海南省 三亚市",
+        "createTime": "2019-09-24 00:18:31",
+        "status": 0,
+        "avatar": "https://i.imgtg.com/2023/01/16/QR57a.jpg"
+      }
+    ],
+    "pageNum": 1,
+    "pageSize": 10,
+    "total": 2000
+  }
+}

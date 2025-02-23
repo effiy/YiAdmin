@@ -1,0 +1,44 @@
+{
+  "path": "/dataset",
+  "name": "dataset",
+  "redirect": "/dataset/list",
+  "meta": {
+    "icon": "Lock",
+    "title": "数据管理",
+    "isLink": "",
+    "isHide": false,
+    "isFull": false,
+    "isAffix": false,
+    "isKeepAlive": true
+  },
+  "children": [
+    {
+      "path": "/dataset/dict/list",
+      "name": "datasetDictListMenu",
+      "component": "/dataset/dict/list",
+      "meta": {
+        "icon": "Menu",
+        "title": "字典列表",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/dataset/api/list",
+      "name": "datasetApiListMenu",
+      "component": "/dataset/api/list",
+      "meta": {
+        "icon": "Menu",
+        "title": "接口列表",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    }
+  ]
+}

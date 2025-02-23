@@ -1,0 +1,44 @@
+{
+  "path": "/templates",
+  "name": "templates",
+  "redirect": "/templates/websites",
+  "meta": {
+    "icon": "Lock",
+    "title": "模版管理",
+    "isLink": "",
+    "isHide": false,
+    "isFull": false,
+    "isAffix": false,
+    "isKeepAlive": true
+  },
+  "children": [
+    {
+      "path": "/templates/websites/list",
+      "name": "templatesWebsitesListMenu",
+      "component": "/templates/websites/list",
+      "meta": {
+        "icon": "Menu",
+        "title": "网站列表",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/templates/websites/detail",
+      "name": "templatesWebsitesDetailMenu",
+      "component": "/templates/websites/detail",
+      "meta": {
+        "icon": "Menu",
+        "title": "网站详情",
+        "isLink": "",
+        "isHide": true,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    }
+  ]
+}

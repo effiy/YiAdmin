@@ -1,0 +1,14 @@
+/dist/*
+dist/*
+.local
+/node_modules/**
+docs/**
+plugins/**
+
+**/*.svg
+**/*.sh
+
+/public/*
+stats.html
+
+.npmrc

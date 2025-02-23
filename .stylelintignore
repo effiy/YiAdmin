@@ -1,0 +1,8 @@
+/dist/*
+dist/*
+docs/*
+/plugins/*
+/public/*
+public/*
+stats.html
+.npmrc
