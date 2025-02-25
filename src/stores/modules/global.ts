@@ -49,6 +49,9 @@ export const useGlobalStore = defineStore({
     // Set GlobalState
     setGlobalState(...args: ObjToKeyValArray<GlobalState>) {
       this.$patch({ [args[0]]: args[1] });
+    },
+    setDark(dark: boolean) {
+      this.isDark = dark;
     }
   },
   persist: piniaPersistConfig("yi-global")

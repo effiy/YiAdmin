@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "vite",
     "doc": "vitepress dev docs --host",
-    "test:unit": "vitest --config ./vitest.config.ts",
+    "test": "vitest --config ./vitest.config.ts",
     "build": "vue-tsc && vite build --mode production",
     "build:dev": "vue-tsc && vite build --mode development",
     "build:test": "vue-tsc && vite build --mode test",
@@ -25,7 +25,8 @@
     "prepare": "husky install",
     "preview": "pnpm build:dev && vite preview",
     "release": "standard-version",
-    "type:check": "vue-tsc --noEmit --skipLibCheck"
+    "type:check": "vue-tsc --noEmit --skipLibCheck",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
@@ -67,7 +68,7 @@
     "@typescript-eslint/parser": "^7.14.1",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
-    "@vue/test-utils": "^2.4.6",
+    "@vue/test-utils": "^2.x",
     "@vue/vue3-jest": "^27.0.0-alpha.1",
     "autoprefixer": "^10.4.20",
     "babel-jest": "^27.0.6",
@@ -80,7 +81,7 @@
     "eslint-plugin-tailwindcss": "^3.17.5",
     "eslint-plugin-vue": "^9.26.0",
     "husky": "^9.0.11",
-    "jest": "^27.0.5",
+    "jest": "^29.0.0",
     "less": "^4.2.1",
     "lint-staged": "^15.2.5",
     "markdown-it-custom-attrs": "^1.0.2",
@@ -109,8 +110,11 @@
     "vite-plugin-tailwindcss": "^0.0.0-0",
     "vite-plugin-vue-devtools": "^7.3.5",
     "vitepress": "^1.5.0",
-    "vitest": "^2.1.8",
-    "vue-tsc": "^2.0.22"
+    "vitest": "^x.x.x",
+    "vue-tsc": "^2.0.22",
+    "jsdom": "^x.x.x",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
   },
   "browserslist": {
     "production": [
