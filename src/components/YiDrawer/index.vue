@@ -1,7 +1,7 @@
 <template>
-  <el-drawer v-model="drawerVisible" :destroy-on-close="true" size="450px" :title="`${drawerProps.title}`">
+  <el-drawer v-model="drawerVisible" :destroy-on-close="true" size="450px" :title="drawerProps.title">
     <el-form
-      ref="ruleFormRef"
+      ref="formRef"
       label-width="100px"
       label-suffix=" :"
       :disabled="drawerProps.isView"
@@ -9,29 +9,34 @@
       :hide-required-asterisk="drawerProps.isView"
     >
       <el-form-item
-        v-for="formItem in drawerProps.formItems"
-        :key="formItem.prop"
-        :label="formItem.label"
-        :prop="formItem.prop"
-        :rules="formItem.form.rules"
+        v-for="item in drawerProps.formItems"
+        :key="item.prop"
+        :label="item.label"
+        :prop="item.prop"
+        :rules="item.form.rules"
       >
+        <!-- 输入框组件 -->
         <el-input
-          v-if="formItem.form.el === 'el-input'"
-          v-model="drawerProps.row![formItem.prop]"
-          :placeholder="formItem.form['placeholder'] || `请填写${formItem.label}`"
+          v-if="item.form.el === 'el-input'"
+          v-model="drawerProps.row[item.prop]"
+          :placeholder="item.form.placeholder || `请填写${item.label}`"
           clearable
-        ></el-input>
+        />
+
+        <!-- 选择框组件 -->
         <el-select
-          v-if="formItem.form.el === 'el-select'"
-          v-model="drawerProps.row![formItem.prop]"
-          :placeholder="formItem.form['placeholder'] || `请选择${formItem.label}`"
+          v-if="item.form.el === 'el-select'"
+          v-model="drawerProps.row[item.prop]"
+          :placeholder="item.form.placeholder || `请选择${item.label}`"
           clearable
         >
-          <el-option v-for="option in formItem.form['enum']" :key="option.value" :label="option.label" :value="option.value" />
+          <el-option v-for="option in item.form.enum" :key="option.value" :label="option.label" :value="option.value" />
         </el-select>
+
+        <!-- 单图上传组件 -->
         <UploadImg
-          v-if="formItem.form.el === 'upload-img'"
-          v-model:image-url="drawerProps.row![formItem.prop]"
+          v-if="item.form.el === 'upload-img'"
+          v-model:image-url="drawerProps.row[item.prop]"
           width="135px"
           height="135px"
           :file-size="3"
@@ -40,11 +45,13 @@
             <el-icon><Avatar /></el-icon>
             <span>请上传头像</span>
           </template>
-          <template #tip> 头像大小不能超过 3M </template>
+          <template #tip>头像大小不能超过 3M</template>
         </UploadImg>
+
+        <!-- 多图上传组件 -->
         <UploadImgs
-          v-if="formItem.form.el === 'upload-imgs'"
-          v-model:file-list="drawerProps.row![formItem.prop]"
+          v-if="item.form.el === 'upload-imgs'"
+          v-model:file-list="drawerProps.row[item.prop]"
           height="140px"
           width="140px"
           border-radius="50%"
@@ -53,33 +60,29 @@
             <el-icon><Picture /></el-icon>
             <span>请上传照片</span>
           </template>
-          <template #tip> 照片大小不能超过 5M </template>
+          <template #tip>照片大小不能超过 5M</template>
         </UploadImgs>
       </el-form-item>
     </el-form>
+
     <template #footer>
-      <el-button @click="drawerVisible = false">取消</el-button>
-      <el-button v-show="!drawerProps.isView" type="primary" @click="handleSubmit">确定</el-button>
+      <el-button @click="closeDrawer">取消</el-button>
+      <el-button v-show="!drawerProps.isView" type="primary" :loading="loading" @click="handleSubmit"> 确定 </el-button>
     </template>
   </el-drawer>
 </template>
 
-<script setup lang="ts" name="Drawer">
+<script setup lang="ts" name="YiDrawer">
 import { ref } from "vue";
 import { ElMessage, FormInstance } from "element-plus";
 import UploadImg from "@/components/Upload/Img.vue";
 import UploadImgs from "@/components/Upload/Imgs.vue";
-
-interface DrawerProps {
-  title: string;
-  isView: boolean;
-  row: Partial<any>;
-  formItems: any[];
-  api?: (params: any) => Promise<any>;
-  getTableList?: () => void;
-}
+import type { DrawerProps } from "./types";
 
 const drawerVisible = ref(false);
+const loading = ref(false);
+const formRef = ref<FormInstance>();
+
 const drawerProps = ref<DrawerProps>({
   isView: false,
   title: "",
@@ -87,26 +90,38 @@ const drawerProps = ref<DrawerProps>({
   formItems: []
 });
 
-// 接收父组件传过来的参数
+// 关闭抽屉
+const closeDrawer = () => {
+  drawerVisible.value = false;
+  formRef.value?.resetFields();
+};
+
+// 接收父组件参数
 const acceptParams = (params: DrawerProps) => {
   drawerProps.value = params;
   drawerVisible.value = true;
 };
 
-// 提交数据（新增/编辑）
-const ruleFormRef = ref<FormInstance>();
-const handleSubmit = () => {
-  ruleFormRef.value!.validate(async valid => {
-    if (!valid) return;
-    try {
-      await drawerProps.value.api!(drawerProps.value.row);
-      ElMessage.success({ message: `${drawerProps.value.title}用户成功！` });
-      drawerProps.value.getTableList!();
-      drawerVisible.value = false;
-    } catch (error) {
-      console.log(error);
+// 提交表单
+const handleSubmit = async () => {
+  if (!formRef.value) return;
+
+  try {
+    await formRef.value.validate();
+    loading.value = true;
+
+    if (drawerProps.value.api) {
+      await drawerProps.value.api(drawerProps.value.row);
+      ElMessage.success(`${drawerProps.value.title}成功！`);
+      drawerProps.value.getTableList?.();
+      closeDrawer();
     }
-  });
+  } catch (error) {
+    console.error("表单提交错误:", error);
+    ElMessage.error("操作失败，请重试！");
+  } finally {
+    loading.value = false;
+  }
 };
 
 defineExpose({

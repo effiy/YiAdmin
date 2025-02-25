@@ -16,7 +16,7 @@ import {
   isNull,
   isNullOrUnDef,
   isHexColor
-} from "../index";
+} from "@/utils/is/index";
 
 describe("is 工具函数测试", () => {
   describe("is", () => {

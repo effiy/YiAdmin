@@ -26,6 +26,7 @@ export default {
     },
     nav: [
       { text: "指南", link: "/指南/介绍", activeMatch: "/指南/介绍" },
+      { text: "组件", link: "/组件/YiDrawer", activeMatch: "/组件/" },
       {
         text: "相关链接",
         items: [
@@ -71,6 +72,15 @@ export default {
           items: [{ text: "常见问题", link: "/指南/其他/常见问题" }]
         }
       ],
+      "/组件/": [
+        {
+          text: "基础组件",
+          collapsible: true,
+          items: [
+            { text: "YiDrawer 抽屉", link: "/组件/YiDrawer" }
+          ]
+        }
+      ]
     }
   }
 };
