@@ -4,9 +4,9 @@
   "private": true,
   "description": "YiAdmin 是一款开源的管理系统，基于以下技术栈构建：Vue 3.4、TypeScript、Vite 5、Pinia 和 Element-Plus。",
   "author": {
-    "name": "YiAI",
+    "name": "YiAdmin",
     "email": "effiyichengliang@gmail.com",
-    "url": "https://github.com/effiy"
+    "url": "https://github.com/effiy/YiAdmin"
   },
   "scripts": {
     "dev": "vite",

@@ -1,14 +1,15 @@
 {
+  // VSCode 推荐安装的插件列表
   "recommendations": [
-    "vue.volar",
-    "hollowtree.vue-snippets",
-    "dbaeumer.vscode-eslint",
-    "stylelint.vscode-stylelint",
-    "esbenp.prettier-vscode",
-    "editorconfig.editorconfig",
-    "streetsidesoftware.code-spell-checker",
-    "syler.less-indented",
-    "equinusocio.vsc-material-theme",
-    "eamodio.gitlens"
+    "vue.volar", // Vue3 官方插件，提供 Vue 语言支持
+    "hollowtree.vue-snippets", // Vue3 代码片段提示
+    "dbaeumer.vscode-eslint", // ESLint 代码检查工具
+    "stylelint.vscode-stylelint", // CSS 代码检查和格式化工具
+    "esbenp.prettier-vscode", // Prettier 代码格式化工具
+    "editorconfig.editorconfig", // 统一不同编辑器的编码风格
+    "streetsidesoftware.code-spell-checker", // 单词拼写检查工具
+    "syler.less-indented", // Less 样式语言支持
+    "equinusocio.vsc-material-theme", // Material 主题
+    "eamodio.gitlens" // Git 历史记录查看工具
   ]
 }
